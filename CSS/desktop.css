@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Heebo:wght@200;300;400&display=swap');
+
+@media screen and (min-width:601px){
+
+body, html{
+  max-width: 100%;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Didact Gothic', sans-serif;
+}
+
+.menu, .submenu{
+  display: none;
+}
+
+.menu-desk{
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  background-color: #000;
+  position: fixed;
+}
+
+.menu-desk ul{
+  display: flex;
+  gap: 8vw;
+  margin-right: 6vw;
+  list-style: none;
+}
+
+.menu-desk a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 19px;
+  transition: 0.3s;
+}
+
+.menu-desk a:hover{
+  color: #726634;
+}
+
+.menu-desk img{
+  width: 18vw;
+  margin-left: 2vw;
+}
+
+header{
+  width: 100vw;
+  background-color: #f4ebe2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10vh;
+}
+
+.texto{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+}
+
+.texto h1{
+  margin: 0;
+  font-size: 55px;
+  font-family: 'Heebo', sans-serif;
+  font-weight: 300;
+}
+
+.linha{
+  width: 5vw;
+  height: 3px;
+  background-color: #000000;
+}
+
+.texto p{
+  font-size: 20px;
+  width: 50%;
+  margin: 35px 0;
+}
+
+.texto button{
+  width: 27%;
+  height: 45px;
+  background: transparent;
+  border: #000000 solid 1px;
+  font-size: 16px;
+  font-family: 'Heebo', sans-serif;
+  transition: 0.4s;
+}
+
+.texto button:hover{
+  background-color: #000000;
+  color: #fff;
+  cursor: pointer;
+}
+
+header img{
+  width: 37%;
+  border: none;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+#produtos{
+  width: 100vw;
+}
+
+.titulo-of{
+  text-align: center;
+  font-family: 'Heebo', sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.prod-menu{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+}
+
+.prod-menu button{
+  border: #000000 solid 1px;
+  font-size: 17px;
+  font-family: 'Heebo', sans-serif;
+  transition: 0.4s;
+  background: #000;
+  color: #fff;
+  width: 15%;
+  padding: 0.30% 0 0.30%;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.prod-menu button:hover{
+  background-color: transparent;
+  color: #000;
+}
+
+.subtitulo{
+  font-size: 30px;
+  text-align: center;
+
+}
+
+.salgados{
+  width: 100%;
+  display: grid;
+  grid-template-areas: 
+  'prod prod prod prod';
+  padding-bottom: 2%;
+}
+
+.produto{
+  border-radius: 5%;
+  margin: 10% 0 0 5%;
+  width: 85%;
+  height: 90%;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 11px 12px 11px rgba(0, 0, 0, 0.30);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.produto:hover{
+  box-shadow: 13px 15px 13px rgba(0, 0, 0, 0.50);
+  width: 86%;
+  height: 91%;
+  margin: 9% 0 0 4%;
+}
+
+.texto-prod{
+  display: none;
+}
+
+.texto-produtos{
+  display: none;
+}
+
+.texto-produtos p{
+  padding-bottom: 4%;
+}
+
+#prod-vira:hover .texto-prod{
+  display: block;
+}
+
+#prod-vira:hover .textos{
+  display: none;
+}
+
+.produto img{
+  height: 300px;
+}
+
+.nome-prod{
+  font-size: 20px;
+}
+
+.preco{
+  font-size: 18px;
+}
+
+.doce{
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  padding-bottom: 3%;
+}
+
+.prod-doce{
+  width: 21%;
+  margin-top: 3%;
+}
+
+.prod-doce:hover{
+  box-shadow: 13px 15px 13px rgba(0, 0, 0, 0.50);
+  width: 22%;
+  margin: 2% 0 0 4%;
+}
+
+.prod-bebida{
+  width: 25%;
+  margin-top: 3%;
+}
+
+.prod-bebida:hover{
+  box-shadow: 13px 15px 13px rgba(0, 0, 0, 0.50);
+  width: 26%;
+  margin: 2% 0 0 4%;
+}
+
+#contato{
+  width: 100%;
+  background-color: #f4ebe2;
+}
+
+.container{
+  width: 100%;
+  display: flex;
+  padding-bottom: 7%;
+}
+
+.contatos{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  border-right: #000 solid 1px ;
+  margin-left: 5%;
+  
+}
+
+.contatos h3{
+  font-size: 25px;
+  font-family: 'Heebo', sans-serif;
+  font-weight: 300;
+}
+
+.contatos a{
+  font-size: 22px;
+  text-decoration: none;
+  color: #000;
+}
+
+.contatos i{
+  margin: 3% 3% 0 0;
+  font-size: 34px;
+}
+
+.contatos img{
+  margin-top: 4%;
+}
+
+.loja{
+  width: 50%;
+  margin-left: 5%;
+}
+
+.loja h3{
+  font-size: 28px;
+  font-family: 'Heebo', sans-serif;
+  font-weight: 300;
+}
+
+.loja a{
+  font-size: 22px;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+.loja img{
+  width: 8%;
+}
+
+footer{
+  background-color: #f4ebe2;
+  text-align: center;
+  width: 100%;
+  color: #000;
+  padding: 0.25%;
+  font-size: 16px;
+  border-top: 1px solid #000;
+}
+}
